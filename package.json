@@ -1,0 +1,26 @@
+{
+  "name": "serverless-aws",
+  "version": "1.0.0",
+  "description": "Practicing Serverless with AWS Lambda",
+  "main": "optimize.js",
+  "scripts": {
+    "predeploy": "rm -rf node_modules && npm i --platform=linux --arch=x64 --target=12.18.0",
+    "deploy": "serverless deploy -v",
+    "postdeploy": "rm -rf node_modules && npm i"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ronaldscruz/serverless-aws.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ronaldscruz/serverless-aws/issues"
+  },
+  "homepage": "https://github.com/ronaldscruz/serverless-aws#readme",
+  "dependencies": {
+    "serverless": "^1.72.0",
+    "sharp": "^0.25.4"
+  }
+}
