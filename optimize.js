@@ -12,7 +12,7 @@ const { basename, extname } = require("path");
 module.exports.handle = async ({ Records: records }, context) => {
   try {
     await Promise.all(
-      records.map(async (r) => {
+      records.map(async (record) => {
         // Key: path to the image
         const { key } = record.s3.object;
 
