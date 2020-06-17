@@ -20,7 +20,6 @@
   },
   "homepage": "https://github.com/ronaldscruz/serverless-aws#readme",
   "dependencies": {
-    "serverless": "^1.72.0",
     "sharp": "^0.25.4"
   }
 }
