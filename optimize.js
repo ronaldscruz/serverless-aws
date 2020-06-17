@@ -9,7 +9,7 @@ const { basename, extname } = require("path");
 /**
  * Everytime an image is received, it's optimized before getting saved
  */
-module.exports.hello = async ({ Records: records }, context) => {
+module.exports.handle = async ({ Records: records }, context) => {
   try {
     await Promise.all(
       records.map(async (r) => {
@@ -40,7 +40,7 @@ module.exports.hello = async ({ Records: records }, context) => {
 
     // Sending back a response
     return {
-      statusCode: 301,
+      statusCode: 201,
       body: {},
     };
   } catch (error) {

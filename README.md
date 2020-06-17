@@ -14,6 +14,8 @@ Practicing Serverless with AWS Lambda (optimizing images uploaded to S3)
 serverless config credentials -o --provider aws --key <key> --secret <secret-key>
 ```
 
-2 - Run deploy script by executing `npm run dev`
+2 - Change the default bucket name (`rscrz-serverless-aws`) to a non existent one inside *serverless.yml*
+
+3 - Run deploy script by executing `npm run dev`
 
 
