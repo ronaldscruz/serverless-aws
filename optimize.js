@@ -34,7 +34,7 @@ module.exports.handle = async ({ Records: records }, context) => {
           Bucket: process.env.bucket,
           ContentType: "image/jpeg",
           Key: `compressed/${basename(key, extname(key))}.jpeg`,
-        });
+        }).promise();
       })
     );
 
